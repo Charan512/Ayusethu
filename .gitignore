@@ -1,0 +1,43 @@
+# --- Generic ---
+.DS_Store
+.env
+*.log
+.vscode/
+.idea/
+*.md
+testImages/
+.agents/
+# --- Backend (Node.js) ---
+backend/node_modules/
+backend/dist/
+backend/coverage/
+backend/.env
+
+# --- Frontend (React/Vite) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# --- Mobile (Flutter) ---
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/build/
+mobile/ios/Flutter/Generated.xcconfig
+mobile/ios/Flutter/flutter_export_environment.sh
+mobile/android/local.properties
+mobile/android/key.properties
+mobile/**/*.jks
+mobile/**/*.keystore
+
+# --- ML Model (Python) ---
+ml-model/venv/
+ml-model/__pycache__/
+ml-model/*.pyc
+ml-model/.ipynb_checkpoints/
+# Optional: keep weights out of git if using HF directly, 
+# but if you want them in the monorepo, we will use LFS.
+# ml-model/feature_extractor.keras
+# ml-model/svm_model.pkl
