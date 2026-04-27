@@ -5,6 +5,7 @@
 .vscode/
 .idea/
 *.md
+!README.md
 testImages/
 .agents/
 # --- Backend (Node.js) ---
