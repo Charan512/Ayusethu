@@ -30,6 +30,8 @@ export default function RegisterView() {
       const payload = isMfg
         ? {
             role: 'MANUFACTURER',
+            name: formData.organizationName,
+            phone: formData.phone,
             email: formData.email,
             password: formData.password,
             organizationName: formData.organizationName,
@@ -100,6 +102,10 @@ export default function RegisterView() {
             <div>
               <label className={LABEL_CLS}>Organisation Name *</label>
               <input name="organizationName" className={INPUT_CLS} value={formData.organizationName} onChange={handleChange} required placeholder="AyurPharm Pvt Ltd" />
+            </div>
+            <div>
+              <label className={LABEL_CLS}>Phone Number *</label>
+              <input name="phone" type="tel" className={INPUT_CLS} value={formData.phone} onChange={handleChange} required placeholder="+91 98765 43210" />
             </div>
             <div>
               <label className={LABEL_CLS}>Location</label>
